@@ -476,7 +476,7 @@ def df_split(df, split_level):
 
     '''
     row_count = len(df)
-    split_size = row_count / split_level
+    split_size = row_count // split_level
     split_df = []
     for n, i in enumerate(range(0, row_count, split_size)):
         if n + 1 == split_level:
